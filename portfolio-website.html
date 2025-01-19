@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Ciência de Dados</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --bg-color: #f5f6fa;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .skills-section {
+            margin-top: 3rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .project-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Seu Nome</h1>
+        <p>Cientista de Dados | Machine Learning Engineer</p>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Sou um cientista de dados apaixonado por resolver problemas complexos usando dados. 
+               Tenho experiência em machine learning, análise estatística e visualização de dados.</p>
+        </section>
+
+        <section id="projects" class="project-grid">
+            <article class="project-card">
+                <a href="https://github.com/seu-usuario/projeto-churn" class="project-link">
+                    <img src="/api/placeholder/400/320" alt="Dashboard do Projeto de Churn" class="project-image">
+                    <div class="project-content">
+                        <h3>Análise de Churn</h3>
+                        <p>Projeto de previsão de churn usando machine learning, alcançando 85% de acurácia.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="https://github.com/seu-usuario/projeto-recomendacao" class="project-link">
+                    <img src="/api/placeholder/400/320" alt="Sistema de Recomendação" class="project-image">
+                    <div class="project-content">
+                        <h3>Sistema de Recomendação</h3>
+                        <p>Desenvolvimento de sistema de recomendação colaborativo para e-commerce.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Collaborative Filtering</span>
+                            <span class="skill-tag">NLP</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="https://github.com/seu-usuario/projeto-sentimentos" class="project-link">
+                    <img src="/api/placeholder/400/320" alt="Análise de Sentimentos" class="project-image">
+                    <div class="project-content">
+                        <h3>Análise de Sentimentos</h3>
+                        <p>Análise de sentimentos em tempo real usando dados do Twitter.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Twitter API</span>
+                            <span class="skill-tag">Dashboard</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <section class="skills-section">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Statistics</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contato</h2>
+            <div class="social-links">
+                <a href="https://github.com/seu-usuario">GitHub</a>
+                <a href="https://linkedin.com/in/seu-usuario">LinkedIn</a>
+                <a href="mailto:seu-email@exemplo.com">Email</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
